@@ -34,28 +34,6 @@ SurfaceView surfaceView = (SurfaceView) findViewById(R.id.surfaceView);
 
 		public void onPictureTaken(byte[] data, Camera camera) {
 			FileOutputStream outStream = null;
-			try {
-				String path = savePictureToFileSystem(data);
-
-				setResult(path);
-				
-//				// Write to SD Card
-//				fileName = String.format("/sdcard/camtest/%d.jpg", System.currentTimeMillis());
-//				outStream = new FileOutputStream(fileName);
-//				outStream.write(data);
-//				outStream.close();
-//				Log.d("", "onPictureTaken - wrote bytes: " + data.length);
-
-				resetCam();
-				
-				Intent intent = new Intent(CustomCamera.this, MainActivity.class);
-				intent.putExtra("filepath", path);
-				startActivity(intent);
-				finish();
-			} catch(Exception e) {
-				e.printStackTrace();
-			} finally {
-			}
-			Log.d("", "onPictureTaken - jpeg");
+			
 		}
 	};
