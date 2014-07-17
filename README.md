@@ -1,12 +1,9 @@
 Android-Camera-Gallery
 ======================
 
+CustomCamera.java
+=================
 
-
-
-
-
-in Java file
 SurfaceView surfaceView = (SurfaceView) findViewById(R.id.surfaceView);
 		preview = new Preview(this, surfaceView);
 		
