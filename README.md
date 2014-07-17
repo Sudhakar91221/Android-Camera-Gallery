@@ -4,7 +4,7 @@ Android-Camera-Gallery
 CustomCamera.java
 =================
 
-SurfaceView surfaceView = (SurfaceView) findViewById(R.id.surfaceView);
+	SurfaceView surfaceView = (SurfaceView) findViewById(R.id.surfaceView);
 		preview = new Preview(this, surfaceView);
 		
 		preview.setLayoutParams(new LayoutParams(LayoutParams.FILL_PARENT, LayoutParams.FILL_PARENT));
